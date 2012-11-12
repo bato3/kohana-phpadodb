@@ -7,14 +7,16 @@ Wrapper for PHP AdoDB: http://adodb.sourceforge.net
 
 Instalation
 ===========
-
+```shell
+ git submodule add http://github.com/bato3/kohana-phpadodb.git modules/adodb 
+```
 Put adodb libary to `vendor/adodb5` direcory or set $config['libdir']
 
 
 Usage
 =====
 
-It is mix required methots from `Database` class and native PHPAdoDB class.  :)
+It is mix abstract methots from `Database` class and native PHPAdoDB class.  :)
 
 
 Configuration
@@ -85,6 +87,8 @@ $rs = DB:query('foo :)', $sql)->param(':param','value')->execute('instancename')
 
 TODO
 ====
-Imlement in `ADORecordSet $rs` `Database_Result` funcionality, first ::as_array()
+* Imlement in `ADORecordSet $rs` `Database_Result` funcionality, first ::as_array()
 (ArrayAccess | SeekableIterator | Traversable | Iterator | Countable)
+
+* Find nice man, who fix selling this README xD
 
