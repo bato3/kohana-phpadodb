@@ -90,5 +90,5 @@ TODO
 * Imlement in `ADORecordSet $rs` `Database_Result` funcionality, first ::as_array()
 (ArrayAccess | SeekableIterator | Traversable | Iterator | Countable)
 
-* Find nice man, who fix selling this README xD
+* Find nice man, who fix spelling this README xD
 
