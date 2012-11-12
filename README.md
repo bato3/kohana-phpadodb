@@ -20,7 +20,7 @@ It is mix required methots from `Database` class and native PHPAdoDB class.  :)
 Configuration
 -------------
 config/database.php Part
-<code>
+```php
 'instancename' => array
 	(
 		'type'       => 'adodb',
@@ -66,22 +66,22 @@ config/database.php Part
 		  */
 		'fetch_mode'   => 0,
 	),
-</code>
+```
 
 
 Usage
 -----
 Adodb like usage:
-<code>
+```php
 $db = Database::instance('instancename');
 $rs = $db->Execute($sql);
-</code>
+```
 
 
 Kohana like usage:
-<code>
+```php
 $rs = DB:query('foo :)', $sql)->param(':param','value')->execute('instancename');
-</code>
+```
 
 TODO
 ====
